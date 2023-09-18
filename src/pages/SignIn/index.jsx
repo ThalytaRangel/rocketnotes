@@ -16,7 +16,8 @@ export function SignIn() {
 
   const { signIn } = useAuth();
 
-  function handleSignIn() {
+  function handleSignIn(e) {
+    e.preventDefault();
     signIn({email, password});
   }
 
